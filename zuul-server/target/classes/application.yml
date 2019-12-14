@@ -1,0 +1,33 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+server:
+  port: 8766
+spring:
+  application:
+    name: zuul-server
+zuul:
+  routes:
+    say-hello-service:
+      path: /say-hello-service/**
+      serviceId: say-hello-service
+    greeting-service:
+      path: /greeting-service/**
+      serviceId: greeting-service
+    eshop-price-service:
+      path: /eshop-price-service/**
+      serviceId: eshop-price-service
+    eshop-product-service:
+      path: /eshop-product-service/**
+      serviceId: eshop-product-service
+    eshop-inventory-service:
+      path: /eshop-inventory-service/**
+      serviceId: eshop-inventory-service
+    eshop-dataaggr-service:
+      path: /eshop-dataaggr-service/**
+      serviceId: eshop-dataaggr-service
+    eshop-datasync-service:
+      path: /eshop-datasync-service/**
+      serviceId: eshop-datasync-service
+

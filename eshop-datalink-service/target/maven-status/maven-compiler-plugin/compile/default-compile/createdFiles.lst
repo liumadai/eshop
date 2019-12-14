@@ -1,0 +1,3 @@
+com\roncoo\eshop\datalink\EshopDataLinkServiceApplication.class
+com\roncoo\eshop\datalink\service\EshopProductService.class
+com\roncoo\eshop\datalink\web\controller\DataLinkController.class

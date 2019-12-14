@@ -1,0 +1,15 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+server:
+  port: 8768
+spring:
+  application:
+    name: eshop-one-service
+
+  zipkin:
+    base-url: http://localhost:8780
+feign: 
+  hystrix:
+    enabled: true

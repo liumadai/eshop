@@ -1,0 +1,9 @@
+spring:
+  application.name: sleuth-server
+server:
+  port: 8780
+security.basic.enabled: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/

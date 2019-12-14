@@ -1,0 +1,23 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+      
+server:
+  port: 8765
+feign:
+  hystrix:
+    enabled: true
+spring:
+  application:
+    name: eshop-datasync-service
+  datasource: 
+    type: com.alibaba.druid.pool.DruidDataSource
+    platform: mysql
+    url: jdbc:mysql://192.168.229.31:3306/eshop
+    username: root
+    password: root
+  rabbitmq:
+    host: 192.168.229.31
+    username: liumadai
+    password: liumadai
